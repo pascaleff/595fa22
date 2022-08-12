@@ -1,0 +1,57 @@
+#+TITLE: Fukaya Categories of Surfaces, Math 595 FSC, Fall 2022
+  
+* Basic information
+
+  - *Lectures:* MWF 11:00--11:50am in 441 Altgeld Hall.
+
+  - *Instructor:* [[http://pascaleff.com][James Pascaleff]]
+    + *Email:* [[mailto:jpascale@illinois.edu][jpascale@illinois.edu]]; *Office:* 357 Altgeld Hall; *Phone:* (217) 244-7277.
+    + *Office hours:* TBD.
+
+  - *Course website:* https://pascaleff.github.io/595fa22/
+
+* Course description
+
+  The Fukaya category is a sophisticated invariant of symplectic
+  manifolds whose definition in full generality is intricate. In the
+  original formulation, objects of this category are certain "branes"
+  supported on Lagrangian submanifolds, and the composition laws in
+  the category involve pseudo-holomorphic maps with Lagrangian
+  boundary conditions (Floer theory).
+  
+  At the same time, a category, like any other algebraic structure,
+  can admit many presentations. For instance, we could try to find a
+  presentation of the Fukaya category by generators and relations, or
+  we could try to build the Fukaya category of a symplectic manifold
+  up from categories associated to smaller pieces of the manifold.
+  
+  Let $S$ be a oriented surface (2-dimensional real manifold). The
+  Fukaya category of $S$ is now well-understood enough that we know
+  multiple ways of presenting it. The goal of this course is to study
+  the Fukaya category of $S$ via multiple presentations, the original
+  Floer theoretic definition being only one of them. Others include
+  the theory of "gentle algebras" (by results of
+  Haiden-Katzarkov-Kontsevich), and a perspective that views the
+  Fukaya category of $S$ as an object in homological algebra
+  (Dyckerhoff-Kapranov).
+  
+  Thus, although this course will include some Floer theory, it will
+  not be strictly speaking necessary in order to understand all of the
+  different approaches to the Fukaya category of a surface. My hope is
+  that students with different backgrounds in geometry and algebra
+  will be able to find at least one way of thinking about the Fukaya
+  category that makes sense to them. Applications of these ideas to
+  Homological Mirror Symmetry will also be discussed.
+
+  - *Prerequisites:* Some familiarity with the tools of algebraic
+    topology is strongly recommended.
+
+* References
+  
+  References to be posted.
+  
+* Lecture notes
+
+  Lecture notes will be posted here as the semester progresses.
+
+
