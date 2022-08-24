@@ -54,7 +54,7 @@
 
 * Lecture notes
 
-  1. Motivation for the Fukaya categories of surfaces.
-  2. DG categories.
+  1. [[file:notes/595fa22-first-lecture.pdf][Motivation for the Fukaya categories of surfaces]].
+  2. [[file:notes/595fa22-dg-categories.pdf][DG categories]].
 
 
