@@ -48,10 +48,13 @@
 
 * References
   
-  References to be posted.
-  
+  - DG categories
+    + [[https://ncatlab.org/nlab/files/bondalKaprEnhTRiangCat.pdf][A. I. Bondal and M. M. Kapranov, Enhanced Triangulated Categories]].
+    + [[https://arxiv.org/abs/math/0601185][B. Keller, On differential graded categories]].
+
 * Lecture notes
 
-  Lecture notes will be posted here as the semester progresses.
+  1. Motivation for the Fukaya categories of surfaces.
+  2. DG categories.
 
 
