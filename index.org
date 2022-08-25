@@ -47,14 +47,19 @@
     topology is strongly recommended.
 
 * References
-  
+
   - DG categories
     + [[https://ncatlab.org/nlab/files/bondalKaprEnhTRiangCat.pdf][A. I. Bondal and M. M. Kapranov, Enhanced Triangulated Categories]].
     + [[https://arxiv.org/abs/math/0601185][B. Keller, On differential graded categories]].
+  - $A_\infty$ categories
+    + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory.
+    + [[https://arxiv.org/abs/math/9910179][B. Keller, Introduction to A-infinity algebras and modules]].
+    + [[https://arxiv.org/abs/1412.1255][G. Faonte, A-infinity functors and homotopy theory of dg-categories]].
 
 * Lecture notes
 
   1. [[file:notes/595fa22-first-lecture.pdf][Motivation for the Fukaya categories of surfaces]].
   2. [[file:notes/595fa22-dg-categories.pdf][DG categories]].
+  3. [[file:notes/595fa22-a-infinity-categories.pdf][$A_\infty$ categories]].
 
 
