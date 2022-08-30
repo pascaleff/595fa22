@@ -6,7 +6,7 @@
 
   - *Instructor:* [[http://pascaleff.com][James Pascaleff]]
     + *Email:* [[mailto:jpascale@illinois.edu][jpascale@illinois.edu]]; *Office:* 357 Altgeld Hall; *Phone:* (217) 244-7277.
-    + *Office hours:* TBD.
+    + *Office hours:* Wednesdays 12:00--2:00pm.
 
   - *Course website:* https://pascaleff.github.io/595fa22/
 
