@@ -61,5 +61,6 @@
   1. [[file:notes/595fa22-first-lecture.pdf][Motivation for the Fukaya categories of surfaces]].
   2. [[file:notes/595fa22-dg-categories.pdf][DG categories]].
   3. [[file:notes/595fa22-a-infinity-categories.pdf][$A_\infty$ categories]].
+  4. [[file:notes/595fa22-associahedron.pdf][The Associahedron]].
 
 
