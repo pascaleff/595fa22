@@ -64,6 +64,6 @@
   2. [[file:notes/595fa22-dg-categories.pdf][DG categories]].
   3. [[file:notes/595fa22-a-infinity-categories.pdf][$A_\infty$ categories]].
   4. [[file:notes/595fa22-associahedron.pdf][The Associahedron]].
-  5. [[file:595fa22-polygons.pdf][Polygons and moduli spaces of disks]].
+  5. [[file:notes/595fa22-polygons.pdf][Polygons and moduli spaces of disks]].
 
 
