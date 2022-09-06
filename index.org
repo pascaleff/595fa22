@@ -57,6 +57,7 @@
     + [[https://arxiv.org/abs/1412.1255][G. Faonte, A-infinity functors and homotopy theory of dg-categories]].
   - Associahedra and moduli spaces of disks
     + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory.
+    + Related: T. A. Driscoll and L. N. Trefethen, Schwarz-Christoffel Mappings.
 
 * Lecture notes
 
@@ -65,5 +66,6 @@
   3. [[file:notes/595fa22-a-infinity-categories.pdf][$A_\infty$ categories]].
   4. [[file:notes/595fa22-associahedron.pdf][The Associahedron]].
   5. [[file:notes/595fa22-polygons.pdf][Polygons and moduli spaces of disks]].
+  6. [[file:notes/595fa22-operads.pdf][Operads]].
 
 
