@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{fourier}
+\usepackage[all]{xy}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[margin=2cm]{geometry}
+\usepackage{tikz}
+%\setlength{\parindent}{0cm}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{prin}[thm]{Principle}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{example}[thm]{Example}
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{CP}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\Poset}{\mathbf{Poset}}
+\newcommand{\Group}{\mathbf{Group}}
+\newcommand{\Order}{\mathbf{Order}}
+\newcommand{\Top}{\mathbf{Top}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\mult}{\mathrm{mult}}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Res}{Res}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\div}{\mathrm{div}}
+\newcommand{\ord}{\mathrm{ord}}
+\newcommand{\maxdeg}{\mathrm{maxdeg}}
+\newcommand{\mindeg}{\mathrm{mindeg}}
+
+\newcommand{\exnum}{1}
+\newcommand{\examdate}{Tuesday, October 15, 2019}
+\newcommand{\pt}[1]{\textbf{(#1 point)}}
+\newcommand{\pteach}[1]{\textbf{(#1 point each)}}
+\newcommand{\pts}[1]{\textbf{(#1 points)}}
+\newcommand{\ptseach}[1]{\textbf{(#1 points each)}}
+
+
+\newcommand{\twocolprob}[4]{
+ \begin{minipage}[t]{#1}
+    #3
+  \end{minipage}
+  \hspace{0.5in}
+  \begin{minipage}[t]{#2}
+    #4
+  \end{minipage}
+}
+
+\newcommand{\hC}{\widehat{\mathbb{C}}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\GL}{\mathrm{GL}}
+\newcommand{\SL}{\mathrm{SL}}
+\newcommand{\PGL}{\mathrm{PGL}}
+\newcommand{\PSL}{\mathrm{PSL}}
+\DeclareMathOperator{\im}{\mathrm{Im}}
+
+\begin{document}
+\title{Math 595 Fukaya Categories of Surfaces: Conformal automorphism groups of disks with marked points}
+\author{James Pascaleff}
+\date{16 September 2022}
+\maketitle
+
+Let $\hC = \C \cup \{\infty\} \cong \bP^{1}$ be the Riemann sphere. The group $\GL(2,\C)$ acts on $\hC$ by M\"{o}bius transformations:
+\begin{equation*}
+  \GL(2,\C) \to \Aut(\hC), \qquad \begin{pmatrix}a&b\\ c&d\end{pmatrix} \mapsto \phi(z) = \frac{az+b}{cz+d},
+\end{equation*}
+where in the formula on the right it is to be understood that $\phi(-d/c) = \infty$ and $\phi(\infty) = a/c$, unless $c = 0$ in which case $\phi(\infty) = \infty$.
+This homomorphism is surjective onto the group of holomorphic automorphisms $\Aut(\hC)$, and its kernel consists of scalar multiples of the identity matrix. Thus it descends to an isomorphism
+\begin{equation*}
+  \PGL(2,\C) \cong \Aut(\hC).
+\end{equation*}
+
+Now observe that the homomorphism $\SL(2,\C) \to \PGL(2,\C)$ is surjective, since the field $\C$ has the property that every element is a perfect square. The kernel of this map is $\{I, -I\}$, where $I$ denotes the identity matrix, and so we have isomorphisms
+\begin{equation*}
+  \PSL(2,\C) = \SL(2,\C)/\{\pm I\} \cong \PGL(2,\C) \cong \Aut(\hC).
+\end{equation*}
+
+It is a standard fact that $\Aut(\hC)$ acts simply transitively on triples of pairwise distinct points in $\hC$. This is equivalent to the statement that, for any triple $(z_{0},z_{1},z_{2})$ of pairwise distinct points, there is a unique M\"{o}bius transformation $\phi$ such that $\phi(0) = z_{0}$, $\phi(1) = z_{1}$, and $\phi(\infty) = z_{2}$. Solving for $\phi$ given $z_{i}$ is an elementary problem.
+
+Consider the open upper half-plane $\bH = \{z \in \C \mid \im z > 0\}$. The closure of $\bH$ in $\hC$ will be denoted $\overline{\bH}$; thus $\overline{\bH} = \bH \cup \R \cup \{\infty\}$. A M\"{o}bius transformation that preserves $\bH$ must also preserve its boundary $\partial \overline{\bH} = \R \cup \{\infty\}$. Therefore this transformation must be representable by a matrix with real entries. Note that $\GL(2,\R)$ and $\PGL(2,\R)$ both have two connected components that are distinguished by the sign of the determinant. The identity component of $\PGL(2,\R)$ preserves $\bH$, while the other component swaps $\bH$ with the lower half-plane. The mapping
+\begin{equation*}
+  \PSL(2,\R) \to \PGL(2,\R)
+\end{equation*}
+is an isomorphism onto the identity component. We conclude that there is an isomorphism
+\begin{equation*}
+  \PSL(2,\R) \cong \Aut(\bH).
+\end{equation*}
+
+Just as $\PGL(2,\C)$ acts simply transitively on triples of pairwise distinct points in $\hC$, the group $\PGL(2,\R)$ acts transitively on triples of pairwise distinct points in $\R \cup \{\infty\}$. (The arguments can be done in parallel if we think of $\hC$ as the projective line over $\C$ and $\R\cup\{\infty\}$ as the projective line over $\R$.)
+
+However, the action of $\PSL(2,\R) \cong \Aut(\bH)$ has two orbits: if we orient $\R \cup \{\infty\}$ as the boundary of $\overline{\bH}$, there are two possible cyclic orderings of the three points: $z_{0} < z_{1} < z_{2} < z_{0}$ and $z_{0} < z_{2} < z_{1} < z_{0}$. The action of $\PSL(2,\R)$ preserves this cyclic ordering because it acts on $\overline{\bH}$ by orientation-preserving diffeomorphisms. (The nonidentity component of $\PGL(2,\R)$, which swaps the upper and lower half-planes, reverses the cyclic ordering.) The conclusion is that $\PSL(2,\R) \cong \Aut(\bH)$ acts simply transitively on triples of pairwise distinct points in $\partial \overline{\bH}$ with a fixed cyclic ordering.
+
+This has a consequence that if we consider configurations of one or two points on $\partial \overline{\bH}$, there is a nontrivial stabilizer subgroup of $\Aut(\bH)$.
+
+First consider configurations of two distinct points on $\partial \overline{\bH}$. There is only one cyclic ordering of two points, so the action of $\Aut(\bH)$ is transitive. Thus the stabilizers for all configurations are mutually conjugate subgroups, and we might as well just pick a single configuration and compute its stabilizer. So consider the configuration $(z_{0} = 0, z_{2} = \infty)$. The general form of a M\"{o}bius transformation in $\PSL(2,\R) \cong \Aut(\bH)$ is
+\begin{equation*}
+  \phi(z) = \frac{az + b}{cz+d}
+\end{equation*}
+with $a,b,c,d \in \R$ and $ad-bc = 1$
+The condition $\phi(\infty) = \infty$ means $c = 0$, and the condition that $\phi(0) = 0$ means $b = 0$. Thus $\phi(z) = ad^{-1} z$. Note that $ad = 1$ means that $ad^{-1} = a^{2}$. So
+\begin{equation*}
+  \phi(z) = a^{2}z \quad (a \in \R^{\times})
+\end{equation*}
+ is multiplication by some positive real number $a^{2}$. Thus the stabilizer subgroup is isomorphic to the multiplicative group $(\R_{>0},\cdot)$ of positive real numbers. Via the exponential map this is isomorphic to the additive group $(\R,+)$.
+
+Now consider the configurations of one point on $\partial \overline{\bH}$. By transitivity we may as well take this point to be $\infty$. The condition $\phi(\infty)=\infty$ again means $c = 0$, so $ad = 1$ and so $\phi$ reduces to
+\begin{equation*}
+  \phi(z) = a^{2}z + ab\quad (a\in \R^{\times},b \in \R).
+\end{equation*}
+In other words, the stabilizer subgroup is the group of affine linear transformations of $\R$ with positive leading coefficient. This is a two-dimensional connected and simply connected nonabelian Lie group; these properties characterize it up to isomorphism.
+
+So far we have used the upper half-plane model, but we could also use the unit disk model. Let $\D = \{z \in \C \mid |z| < 1\}$, and let $\overline{\D}$ be its closure. To compare $\bH$ and $\D$ we must choose a conformal isomorphism between them. For lack of a canonical choice, let us choose
+\begin{equation*}
+  f(z) = \frac{z-i}{z+i}.
+\end{equation*}
+This defines a map $\bH \to \D$, with $f(0) = -1$, $f(1) = -i$ and $f(\infty) = 1$.
+
+By general nonsense, the group $\Aut(\D)$ is conjugate to $\Aut(\bH)$ inside $\Aut(\hC)$:
+\begin{equation*}
+  \Aut(\D) = f\Aut(\bH)f^{-1}.
+\end{equation*}
+
+Recall that the stabilizer of the configuration $(0,\infty)$ in $\partial \overline{\bH}$ is $\phi(z) = \lambda z$ for $\lambda \in \R_{> 0}$. After conjugation by $f$ this becomes
+\begin{equation*}
+  \psi(z) = \frac{(\lambda + 1)z + (\lambda -1)}{(\lambda - 1)z + (\lambda +1)},
+\end{equation*}
+so these are the conformal automorphisms of $\D$ that fix $(-1,1)$ in $\partial \overline{D}$.
+
+Recall that the stabilizer of $\infty \in \partial \overline{\bH}$ is $\phi(z) = \lambda z + \mu$, where $\lambda  \in \R_{> 0}, \mu \in \R$. After conjugation by $f$ this becomes
+\begin{equation*}
+  \psi(z) = \frac{(\lambda + i \mu + 1)z + (\lambda - i\mu -1)}{(\lambda + i\mu - 1)z + (\lambda -i \mu +1)}.
+\end{equation*}
+
+A conformal automorphism of $\bH$ that fixes $\infty$ is completely determined by where it sends $i$: with the notation as above, $\phi(i) = \lambda i + \mu = \tau \in \bH$. Since $f(i) = 0$, by the same token, a conformal automorphism of $\D$ that fixes $1$ is completely determined by where it sends $0$, which is some point $\alpha = f(\tau)\in \D$. Thus we may parametrize the stabilizer of $1 \in \partial \overline{\D}$ by points $\alpha \in \D$. We leave it as an exercise to carry this out explicitly.
+
+\end{document}
