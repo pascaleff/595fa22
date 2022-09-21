@@ -69,5 +69,5 @@
   6. [[file:notes/595fa22-operads.pdf][Operads]].
   7. [[file:notes/595fa22-towards-fukaya.pdf][Towards the Fukaya category of a surface]]. 
      - [[file:notes/conformal.pdf][Background on the conformal automorphisms of the disk]].
-
+  8. [[file:notes/595fa22-first-examples.pdf][First examples of computations in the Fukaya category]].
 
