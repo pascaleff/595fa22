@@ -73,4 +73,4 @@
      - [[file:notes/conformal.pdf][Background on the conformal automorphisms of the disk]].
   8. [[file:notes/595fa22-first-examples.pdf][First examples of computations in the Fukaya category]].
      - For the example of triangles on the two-torus and the relation to theta functions, [[https://faculty.math.illinois.edu/~jpascale/courses/2018/595/notes/595lecture28.pdf][see these notes]] from a [[https://faculty.math.illinois.edu/~jpascale/courses/2018/595/][previous 595 course]].
- 
+  9. Gradings and signs on surfaces. ([[file:notes/595fa22-gradings-signs.pdf][First part of notes]]) 
