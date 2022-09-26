@@ -52,12 +52,14 @@
     + [[https://ncatlab.org/nlab/files/bondalKaprEnhTRiangCat.pdf][A. I. Bondal and M. M. Kapranov, Enhanced Triangulated Categories]].
     + [[https://arxiv.org/abs/math/0601185][B. Keller, On differential graded categories]].
   - $A_\infty$ categories
-    + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory.
+    + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory, Chapter I.
     + [[https://arxiv.org/abs/math/9910179][B. Keller, Introduction to A-infinity algebras and modules]].
     + [[https://arxiv.org/abs/1412.1255][G. Faonte, A-infinity functors and homotopy theory of dg-categories]].
   - Associahedra and moduli spaces of disks
-    + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory.
+    + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory, Chapter II, Section 9.
     + Related: T. A. Driscoll and L. N. Trefethen, Schwarz-Christoffel Mappings.
+  - Gradings and signs on surfaces
+    + P. Seidel, Fukaya Categories and Picard-lefschetz Theory, Chapter II, Section 13.
 
 * Lecture notes
 
@@ -70,4 +72,5 @@
   7. [[file:notes/595fa22-towards-fukaya.pdf][Towards the Fukaya category of a surface]]. 
      - [[file:notes/conformal.pdf][Background on the conformal automorphisms of the disk]].
   8. [[file:notes/595fa22-first-examples.pdf][First examples of computations in the Fukaya category]].
-
+     - For the example of triangles on the two-torus and the relation to theta functions, [[https://faculty.math.illinois.edu/~jpascale/courses/2018/595/notes/595lecture28.pdf][see these notes]] from a [[https://faculty.math.illinois.edu/~jpascale/courses/2018/595/][previous 595 course]].
+ 
