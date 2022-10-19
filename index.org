@@ -59,7 +59,9 @@
     + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory, Chapter II, Section 9.
     + Related: T. A. Driscoll and L. N. Trefethen, Schwarz-Christoffel Mappings.
   - Gradings and signs on surfaces
-    + P. Seidel, Fukaya Categories and Picard-lefschetz Theory, Chapter II, Section 13.
+    + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory, Chapter II, Section 13.
+  - Formal enlargements
+    + P. Seidel, Fukaya Categories and Picard-Lefschetz Theory, Chapter I.
 
 * Lecture notes
 
@@ -73,4 +75,6 @@
      - [[file:notes/conformal.pdf][Background on the conformal automorphisms of the disk]].
   8. [[file:notes/595fa22-first-examples.pdf][First examples of computations in the Fukaya category]].
      - For the example of triangles on the two-torus and the relation to theta functions, [[https://faculty.math.illinois.edu/~jpascale/courses/2018/595/notes/595lecture28.pdf][see these notes]] from a [[https://faculty.math.illinois.edu/~jpascale/courses/2018/595/][previous 595 course]].
-  9. [[file:notes/595fa22-gradings-signs.pdf][Gradings and signs on surfaces]]. 
+  9. [[file:notes/595fa22-gradings-signs.pdf][Gradings and signs on surfaces]].
+  10. Verifying the $A_\infty$ associativity equations on surfaces. (Notes under construction)
+  11. [[file:notes/595fa22-modules.pdf][Formal enlargements of $A_\infty$ categories]].
